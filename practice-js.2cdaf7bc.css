@@ -1,0 +1,43 @@
+body {
+  transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.palette {
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.color-card {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+.color-card.is-active {
+  transform: perspective(400px) rotateX(10deg);
+}
+
+.color-swatch {
+  cursor: pointer;
+  height: 128px;
+}
+
+.color-meta {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.color-meta p {
+  letter-spacing: .1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=practice-js.2cdaf7bc.css.map */
