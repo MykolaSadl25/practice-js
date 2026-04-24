@@ -1,43 +1,41 @@
-body {
-  transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
-}
-
-.palette {
-  grid-gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.list {
+  outline: 1px solid red;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
   list-style: none;
-  display: grid;
+  display: flex;
 }
 
-.color-card {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 5px;
-  transition: transform .25s cubic-bezier(.4, 0, .2, 1);
-  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+.item {
+  text-align: center;
+  border-radius: 25px;
+  outline: 2px solid #000;
+  flex-basis: calc(33.3333% - 20px);
+  padding: 20px;
 }
 
-.color-card.is-active {
-  transform: perspective(400px) rotateX(10deg);
+.delete {
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
 }
 
-.color-swatch {
-  cursor: pointer;
-  height: 128px;
+.box {
+  background-color: rgb(red, green, blue);
+  border: 1px solid #000;
+  width: 500px;
+  height: 500px;
 }
 
-.color-meta {
-  padding: 10px;
-  font-weight: 700;
-}
-
-.color-meta p {
-  letter-spacing: .1em;
-  margin-top: 0;
-  margin-bottom: 0;
+.size {
+  background-color: #000;
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=practice-js.2cdaf7bc.css.map */
